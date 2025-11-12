@@ -1,0 +1,2 @@
+- [x] Remove the slick-prev button from Hero.tsx
+- [x] Revert global text color and background color changes in WeddingSite.scss
