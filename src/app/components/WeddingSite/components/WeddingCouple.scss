@@ -1,0 +1,101 @@
+// Wedding Couple component styles - Match wedding2 template
+@import '../base';
+
+.wedding-couple-section {
+  @extend .section-padding;
+
+  .gb {
+    overflow: hidden;
+    margin-bottom: 60px;
+
+    > div {
+      width: 50%;
+      float: left;
+
+      @media (max-width: 991px) {
+        width: 100%;
+        float: none;
+      }
+    }
+
+    .img-holder {
+      height: 400px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 1;
+        visibility: visible;
+
+        @media (max-width: 470px) {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+
+    .details {
+      background-color: rgba(157, 43, 39, 0.05);
+      padding: 50px 55px;
+
+      @media screen and (min-width: 992px) {
+        display: table;
+      }
+
+      @media (max-width: 991px) {
+        padding: 40px 45px;
+      }
+
+      @media (max-width: 767px) {
+        padding: 40px 25px;
+      }
+
+      > .details-inner {
+        @media screen and (min-width: 992px) {
+          display: table-cell;
+          vertical-align: middle;
+        }
+
+        h3 {
+          font-size: 26px;
+          font-weight: 600;
+          color: #3d3d3d;
+          margin: 0 0 0.7em;
+          text-transform: uppercase;
+
+          @media (max-width: 1199px) {
+            font-size: 22px;
+          }
+
+          @media (max-width: 767px) {
+            font-size: 20px;
+          }
+        }
+
+        p {
+          color: $text-color;
+          line-height: 1.8em;
+        }
+
+        .signature {
+          font-family: $font-cursive;
+          font-size: 28px;
+          display: block;
+          padding-left: 25px;
+          margin-top: 15px;
+          color: $primary-color;
+
+          @media (max-width: 991px) {
+            font-size: 26px;
+          }
+
+          @media (max-width: 767px) {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}

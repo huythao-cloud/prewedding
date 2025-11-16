@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './Countdown.scss';
 
 const Countdown: React.FC = () => {
   const [timeLeft, setTimeLeft] = useState({

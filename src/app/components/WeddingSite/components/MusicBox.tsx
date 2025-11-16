@@ -1,4 +1,5 @@
 import React from 'react';
+import './MusicBox.scss';
 
 const MusicBox: React.FC = () => {
   return (

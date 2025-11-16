@@ -1,0 +1,37 @@
+// Preloader component styles
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fcfef3;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s, visibility 0.5s;
+
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .icon {
+    i {
+      font-size: 48px;
+      color: #9d2b27;
+      animation: spin 1s linear infinite;
+    }
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

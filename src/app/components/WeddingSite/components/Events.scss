@@ -1,0 +1,72 @@
+// Events component styles - Match wedding2 template
+@import '../base';
+
+.getting-there-section {
+  background-color: $primary-color;
+
+  .content {
+    h3,
+    p {
+      color: #fff;
+    }
+
+    p {
+      @media (max-width: 1199px) {
+        font-size: 16px;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 15px;
+      }
+    }
+
+    .col p:last-child {
+      margin-bottom: 0;
+    }
+
+    h3 {
+      font-size: 25px;
+      font-weight: 600;
+      margin: 0 0 0.8em;
+
+      @media (max-width: 1199px) {
+        font-size: 22px;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 20px;
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+      > .col:first-child {
+        padding-right: 75px;
+        text-align: right;
+        border-right: 1px solid #548a7f;
+      }
+    }
+
+    @media (max-width: 991px) {
+      > .col:first-child {
+        padding-bottom: 35px;
+        margin-bottom: 35px;
+        border-bottom: 1px solid #548a7f;
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+      > .col:last-child {
+        padding-left: 75px;
+      }
+    }
+  }
+
+  // Location icons
+  .fi {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+}

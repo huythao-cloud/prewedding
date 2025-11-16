@@ -1,4 +1,5 @@
 import React from 'react';
+import './Events.scss';
 import eventsImg1 from '../../../../assets/wedding2/images/events/img-1.jpg';
 import eventsImg2 from '../../../../assets/wedding2/images/events/img-2.jpg';
 

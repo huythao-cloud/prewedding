@@ -1,0 +1,176 @@
+// Story component styles - Match wedding2 template
+@import '../base';
+
+.story-section {
+  .story-timeline {
+    position: relative;
+
+    // Vertical timeline line
+    &:after {
+      content: '';
+      background: rgba($primary-color, 0.1);
+      width: 2px;
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+
+      @media (max-width: 991px) {
+        display: none;
+      }
+    }
+
+    > .row {
+      position: relative;
+
+      .horizontal-line {
+        background: rgba($primary-color, 0.1);
+        width: 70%;
+        height: 1px;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+      }
+
+      + .row {
+        margin-top: 50px;
+        padding-top: 15px;
+
+        @media (max-width: 991px) {
+          padding-top: 0;
+        }
+      }
+
+      > .col:first-child {
+        padding: 0 45px 0 100px;
+
+        @media (max-width: 1199px) {
+          padding: 0 45px 0 70px;
+        }
+
+        @media (max-width: 991px) {
+          padding: 0 15px;
+        }
+      }
+
+      > .col:last-child {
+        padding: 0 100px 0 45px;
+
+        @media (max-width: 1199px) {
+          padding: 0 70px 0 45px;
+        }
+
+        @media (max-width: 991px) {
+          padding: 0 15px;
+        }
+      }
+    }
+
+    .story-text {
+      @media (max-width: 991px) {
+        background: rgba($primary-color, 0.05);
+        padding: 35px 25px;
+      }
+    }
+
+    .right-align-text {
+      @media screen and (min-width: 992px) {
+        text-align: right;
+      }
+    }
+
+    .text-holder {
+      border-top: 1px solid rgba($primary-color, 0.1);
+      padding-top: 45px !important;
+      position: relative;
+
+      @media (max-width: 991px) {
+        border: 0;
+        padding-top: 0 !important;
+      }
+
+      .heart {
+        background-color: #d4a5a5;
+        width: 43px;
+        height: 43px;
+        line-height: 41px;
+        text-align: center;
+        border: 2px solid rgba($primary-color, 0.5);
+        position: absolute;
+        left: -22px;
+        top: -22px;
+        border-radius: 50%;
+        z-index: 10;
+
+        @media (max-width: 991px) {
+          display: none;
+        }
+
+        .fa {
+          color: #fff;
+        }
+      }
+    }
+
+    .right-heart .heart {
+      left: auto;
+      right: -22px;
+    }
+
+    h3 {
+      font-size: 22px;
+      font-weight: 600;
+      color: #d4a5a5;
+      margin: 0 0 0.5em;
+      text-transform: uppercase;
+
+      @media (max-width: 991px) {
+        font-size: 20px;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 18px;
+      }
+    }
+
+    .date {
+      font-size: 14px;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    img {
+      display: inline-block;
+    }
+  }
+
+  .video-holder {
+    position: relative;
+
+    .video-play-btn {
+      background: rgba(255, 255, 255, 0.8);
+      width: 60px;
+      height: 60px;
+      line-height: 57px;
+      text-align: center;
+      font-size: 25px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      i {
+        color: #d4a5a5;
+      }
+    }
+  }
+
+  .story-timeline .story-slider .owl-controls {
+    display: none;
+  }
+}

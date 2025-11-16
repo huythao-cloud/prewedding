@@ -1,4 +1,5 @@
 import React from 'react';
+import './WeddingCouple.scss';
 import groomImg from '../../../../assets/bridegroom/TheGroom.jpeg';
 import brideImg from '../../../../assets/bridegroom/TheBride.jpeg';
 

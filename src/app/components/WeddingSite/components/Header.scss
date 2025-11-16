@@ -1,0 +1,117 @@
+// Header component styles
+@import '../base';
+
+.site-header {
+  .navigation {
+    background-color: $bg-color;
+    margin-bottom: 0;
+    border: 0;
+    border-radius: 0;
+    
+    > .container {
+      position: relative;
+    }
+  }
+
+  #navbar {
+    transition: all 0.5s;
+
+    > ul li a {
+      &:hover {
+        text-decoration: none;
+        color: $primary-color;
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+      li {
+        position: relative;
+      }
+
+      > ul > li > a {
+        font-size: 16px;
+      }
+
+      > ul .sub-menu {
+        background-color: $bg-color;
+        width: 220px;
+        border-top: 2px solid $primary-color;
+        position: absolute;
+        left: 0;
+        top: 130%;
+        z-index: 110;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+      }
+
+      > ul > li .sub-menu li {
+        border-bottom: 1px solid #e6e6e6;
+      }
+
+      > ul > li .sub-menu a {
+        font-size: 14px;
+        display: block;
+        padding: 8px 15px;
+      }
+
+      > ul > li:hover > .sub-menu {
+        top: 100%;
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 991px) {
+      > ul > li a {
+        display: block;
+        font-size: 14px;
+      }
+
+      > ul > li .sub-menu li {
+        border-bottom: 1px solid #e6e6e6;
+      }
+
+      > ul .sub-menu > li:last-child {
+        border-bottom: 0;
+      }
+
+      > ul > li > .sub-menu a {
+        padding: 8px 15px 8px 45px;
+      }
+    }
+  }
+
+  .navbar-brand {
+    font-family: $font-cursive;
+    font-size: 28px;
+    color: $heading-color;
+    padding: 15px 0;
+
+    i {
+      color: $primary-color;
+      margin: 0 5px;
+    }
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .navbar-toggler {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+
+    .icon-bar {
+      background-color: white;
+      display: block;
+      width: 22px;
+      height: 2px;
+      border-radius: 1px;
+      margin: 4px 0;
+    }
+  }
+}

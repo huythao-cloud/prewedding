@@ -1858,7 +1858,7 @@ a:focus {
 }
 
 .hero .wedding-announcement .save-the-date:before {
-  background-color: rgba(94, 154, 142, 0.3);
+  background-color: rgba(157, 43, 39, 0.3);
   width: 110%;
   height: 110%;
   left: -5%;
@@ -1877,7 +1877,7 @@ a:focus {
 }
 
 .hero .wedding-announcement .save-the-date:after {
-  background-color: rgba(94, 154, 142, 0.7);
+  background-color: rgba(157, 43, 39, 0.7);
   width: 100%;
   height: 100%;
   left: 0;
@@ -2527,7 +2527,7 @@ a:focus {
 
 .story-section .story-timeline:after {
   content: "";
-  background: rgba(94, 154, 142, 0.1);
+  background: rgba(157, 43, 39, 0.1);
   width: 2px;
   height: 100%;
   position: absolute;
@@ -2551,7 +2551,7 @@ a:focus {
 }
 
 .story-section .story-timeline > .row .horizontal-line {
-  background: rgba(94, 154, 142, 0.1);
+  background: rgba(157, 43, 39, 0.1);
   width: 70%;
   height: 1px;
   position: absolute;
@@ -2609,7 +2609,7 @@ a:focus {
 
 @media (max-width: 991px) {
   .story-section .story-timeline .story-text {
-    background: rgba(94, 154, 142, 0.05);
+    background: rgba(157, 43, 39, 0.05);
     padding: 35px 25px;
   }
 }
@@ -2621,7 +2621,7 @@ a:focus {
 }
 
 .story-section .story-timeline .text-holder {
-  border-top: 1px solid rgba(94, 154, 142, 0.1);
+  border-top: 1px solid rgba(157, 43, 39, 0.1);
   padding-top: 45px !important;
   position: relative;
 }
@@ -2634,12 +2634,12 @@ a:focus {
 }
 
 .story-section .story-timeline .text-holder .heart {
-  background-color: #9cc2bb;
+  background-color: #d4a5a5;
   width: 43px;
   height: 43px;
   line-height: 41px;
   text-align: center;
-  border: 2px solid rgba(94, 154, 142, 0.5);
+  border: 2px solid rgba(157, 43, 39, 0.5);
   position: absolute;
   left: -22px;
   top: -22px;
@@ -2670,7 +2670,7 @@ a:focus {
   font-size: 22px;
   font-size: 1.22222rem;
   font-weight: 600;
-  color: #5e9a8e;
+  color: #d4a5a5;
   margin: 0 0 0.5em;
   text-transform: uppercase;
 }

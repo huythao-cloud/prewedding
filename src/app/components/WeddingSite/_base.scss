@@ -1,0 +1,233 @@
+// Base styles for WeddingSite components
+// Extracted and customized from wedding2 template
+
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,600,700|Great+Vibes');
+
+// Global variables
+$primary-color: #9d2b27;
+$text-color: #767878;
+$heading-color: #6e6e6e;
+$bg-color: #fcfef3;
+$font-family: 'Dosis', sans-serif;
+$font-cursive: 'Great Vibes', cursive;
+
+// Theme Reset Style
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $bg-color;
+  font-size: 18px;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+
+  @media (max-width: 1199px) {
+    font-size: 17px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 16px;
+  }
+}
+
+p {
+  color: $text-color;
+  line-height: 1.8em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $heading-color;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+// Global Elements
+.page-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+}
+
+main {
+  width: 100vw;
+  max-width: none;
+}
+
+.wow {
+  visibility: hidden;
+}
+
+.fi:before {
+  margin: 0;
+}
+
+// Section padding
+.section-padding {
+  padding: 120px 0;
+
+  @media (max-width: 1199px) {
+    padding: 100px 0;
+  }
+
+  @media (max-width: 991px) {
+    padding: 80px 0;
+  }
+}
+
+// Section title styles
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+
+  @media (max-width: 767px) {
+    margin-bottom: 50px;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  h2 {
+    font-family: $font-cursive;
+    font-size: 46px;
+    color: #ffffff !important;
+    background-color: rgba(157, 43, 39, 0.15) !important;
+    margin: 0;
+    padding: 10px 25px 5px;
+    display: inline-block;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+
+    @media (max-width: 1199px) {
+      font-size: 40px;
+    }
+
+    @media (max-width: 991px) {
+      font-size: 35px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 30px;
+      padding: 8px 10px 3px;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+// Animation classes
+.wow {
+  visibility: hidden;
+}
+
+// Fade animations
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-50px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(50px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.fadeInLeft {
+  animation: fadeInLeft 0.6s ease-out;
+}
+
+.fadeInRight {
+  animation: fadeInRight 0.6s ease-out;
+}
+
+.fadeInUp {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.fadeIn {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.zoomIn {
+  animation: zoomIn 0.6s ease-out;
+}
+
+// Slower variants
+.fadeInLeftSlow {
+  animation: fadeInLeft 1s ease-out;
+}
+
+.fadeInRightSlow {
+  animation: fadeInRight 1s ease-out;
+}
+
+.fadeInUpSlow {
+  animation: fadeInUp 1s ease-out;
+}
+
+// Utility classes
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

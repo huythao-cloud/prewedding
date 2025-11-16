@@ -1,4 +1,5 @@
 import React from 'react';
+import './Gallery.scss';
 import galleryImg1 from '../../../../assets/wedding2/images/gallery/img-1.jpg';
 import galleryImg2 from '../../../../assets/wedding2/images/gallery/img-2.jpg';
 import galleryImg3 from '../../../../assets/wedding2/images/gallery/img-3.jpg';

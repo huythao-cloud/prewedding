@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './Hero.scss';
 import slide1 from '../../../../assets/slide/slide1.jpg';
 import slide2 from '../../../../assets/slide/slide2.jpg';
 
@@ -58,7 +59,7 @@ const Hero: React.FC = () => {
           }}
         >
         </div>
-        <button type="button" className="slick-next" onClick={() => handleButtonClick('next')}>Next</button>
+
       </div>
       <div className="wedding-announcement">
         {/* <div className="couple-name-merried-text">

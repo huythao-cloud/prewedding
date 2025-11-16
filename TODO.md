@@ -1,2 +1,5 @@
 - [x] Remove the slick-prev button from Hero.tsx
 - [x] Revert global text color and background color changes in WeddingSite.scss
+- [x] Remove or hide the button that covers the screen in Hero component
+- [x] Change color #5e9a8e to #9d2b27 in the original CSS file
+- [x] Change background color of entire website to #fcfef3

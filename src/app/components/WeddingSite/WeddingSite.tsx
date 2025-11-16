@@ -10,9 +10,6 @@ import Countdown from './components/Countdown';
 import Story from './components/Story';
 import Events from './components/Events';
 import Gallery from './components/Gallery';
-import RSVP from './components/RSVP';
-import GettingThere from './components/GettingThere';
-import GiftRegistration from './components/GiftRegistration';
 import Footer from './components/Footer';
 import WeddingCouple from './components/WeddingCouple';
 
@@ -30,9 +27,6 @@ const WeddingSite: React.FC = () => {
       <Story />
       <Events />
       <Gallery />
-      <RSVP />
-      <GettingThere />
-      <GiftRegistration />
       <Footer />
     </div>
   );

@@ -1,2 +1,17 @@
-// Import the original wedding2 styles
-@import '../../../assets/wedding2/css/style.css';
+// Import base styles
+@import './base';
+
+// Import custom theme overrides
+@import './custom-theme.scss';
+
+// Global page wrapper
+.page-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+// Global background color
+body {
+  background-color: #fcfef3;
+}
